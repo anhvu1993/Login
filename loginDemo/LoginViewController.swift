@@ -11,6 +11,7 @@ import FacebookCore
 import FacebookLogin
 import LineSDK
 import GoogleSignIn
+import ZaloSDK
 
 class LoginViewController: UIViewController {
     
@@ -22,7 +23,13 @@ class LoginViewController: UIViewController {
        
     }
     
+    @IBAction func loginWithZalo(_ sender: Any) {
+        login()
+    }
     
+    @IBAction func logOutWithZalo(_ sender: Any) {
+        logout()
+    }
     @IBAction func signINGoogle(_ sender: Any) {
         GIDSignIn.sharedInstance()?.signIn()
     }
@@ -134,3 +141,40 @@ extension LoginViewController: GIDSignInUIDelegate, GIDSignInDelegate {
         }
     }
 }
+
+//MARK : loginzalo
+extension LoginViewController {
+    func login() {
+        ZaloSDK.sharedInstance().authenticateZalo(with: ZAZAloSDKAuthenTypeViaZaloAppAndWebView, parentController: self) { (response) in
+            if response?.isSucess == true {
+                self.showProfile()
+            }
+        }
+    }
+        func logout() {
+            ZaloSDK.sharedInstance().unauthenticate()
+        }
+        
+        func showProfile() {
+            ZaloSDK.sharedInstance().getZaloUserProfile { (response) in
+                self.onLoad(profile: response)
+            }
+        }
+        
+        func onLoad(profile: ZOGraphResponseObject?) {
+            guard let profile = profile,
+                profile.isSucess,
+                let name = profile.data["name"] as? String,
+                let id = profile.data["id"] as? String,
+                let gender = profile.data["gender"] as? String,
+                let picture = profile.data["picture"] as? [String: Any?],
+                let pictureData = picture["data"] as? [String: Any?],
+                let sUrl = pictureData["url"] as? String,
+                let url = URL(string: sUrl)
+                else {
+                    return
+            }
+            print(id)
+        }
+    }
+

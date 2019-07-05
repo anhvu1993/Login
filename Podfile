@@ -12,5 +12,6 @@ pod 'FBSDKCoreKit', '~> 4.38.0'
 pod 'FBSDKLoginKit', '~> 4.38.0'
 pod 'LineSDK', '~> 4.1.0'
 pod 'GoogleSignIn', '~> 4.4'
+pod 'ZaloSDK', '~> 2.3.0921.1'
 
 end
