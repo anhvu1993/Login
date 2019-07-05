@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Edp-Hd-qg1">
-                                <rect key="frame" x="88" y="380" width="199" height="267"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Edp-Hd-qg1">
+                                <rect key="frame" x="88" y="313.5" width="199" height="333.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-Bc-pZ8">
-                                        <rect key="frame" x="0.0" y="0.0" width="199" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="28.5"/>
                                         <color key="backgroundColor" red="0.24781978130340576" green="0.31897097826004028" blue="0.70978814363479614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Login Facebook" image="icons8-facebook-old-48">
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2b-R6-5Oq">
-                                        <rect key="frame" x="0.0" y="48" width="199" height="28"/>
+                                        <rect key="frame" x="0.0" y="43.5" width="199" height="28.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="LogOut Facebook">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGV-w9-pu6">
-                                        <rect key="frame" x="0.0" y="96" width="199" height="27.5"/>
+                                        <rect key="frame" x="0.0" y="87" width="199" height="28.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Login" backgroundImage="btn_login_press">
@@ -54,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkZ-jc-6ez">
-                                        <rect key="frame" x="0.0" y="143.5" width="199" height="28"/>
+                                        <rect key="frame" x="0.0" y="130.5" width="199" height="29"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <inset key="titleEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="LogOut" backgroundImage="btn_login_base">
@@ -65,7 +65,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcs-Mj-Tgu">
-                                        <rect key="frame" x="0.0" y="191.5" width="199" height="27.5"/>
+                                        <rect key="frame" x="0.0" y="174.5" width="199" height="28.5"/>
                                         <color key="backgroundColor" red="1" green="0.70188738009999996" blue="0.086921414449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -78,7 +78,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZg-hN-9su">
-                                        <rect key="frame" x="0.0" y="239" width="199" height="28"/>
+                                        <rect key="frame" x="0.0" y="218" width="199" height="28.5"/>
                                         <color key="backgroundColor" red="1" green="0.70188738009999996" blue="0.086921414449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -90,6 +90,24 @@
                                             <action selector="signOutGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHI-5E-WVL"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPF-bY-VLo">
+                                        <rect key="frame" x="0.0" y="261.5" width="199" height="28.5"/>
+                                        <color key="backgroundColor" red="0.057373464107513428" green="0.6540711522102356" blue="0.88703447580337524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Login" image="icons8-zalo_filled"/>
+                                        <connections>
+                                            <action selector="loginWithZalo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FSZ-I6-pfs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txG-PF-peR">
+                                        <rect key="frame" x="0.0" y="305" width="199" height="28.5"/>
+                                        <color key="backgroundColor" red="0.057373464107513428" green="0.6540711522102356" blue="0.88703447580337524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="LogOut" image="icons8-zalo_filled"/>
+                                        <connections>
+                                            <action selector="logOutWithZalo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39q-iC-aX3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -97,7 +115,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Edp-Hd-qg1" secondAttribute="bottom" constant="20" id="Pw9-88-Kdh"/>
                             <constraint firstItem="Edp-Hd-qg1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XrT-7W-F5z"/>
-                            <constraint firstItem="Edp-Hd-qg1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2.5" id="XyO-wL-YXc"/>
+                            <constraint firstItem="Edp-Hd-qg1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="XyO-wL-YXc"/>
                             <constraint firstItem="Edp-Hd-qg1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="sVc-v1-7ke"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -105,13 +123,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-818.39999999999998" y="16.641679160419791"/>
+            <point key="canvasLocation" x="-1418" y="-367"/>
         </scene>
     </scenes>
     <resources>
-        <image name="btn_login_base" width="140" height="64"/>
-        <image name="btn_login_press" width="140" height="64"/>
+        <image name="btn_login_base" width="94" height="44"/>
+        <image name="btn_login_press" width="188" height="88"/>
         <image name="google" width="24" height="24"/>
         <image name="icons8-facebook-old-48" width="24" height="24"/>
+        <image name="icons8-zalo_filled" width="25" height="25"/>
     </resources>
 </document>
