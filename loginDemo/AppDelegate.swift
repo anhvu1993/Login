@@ -15,6 +15,7 @@ import ZaloSDK
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     let zaloAppId = "4093904622814828734"
+    let signGoogleId = "248734013233-nlpr4a4inv6513sngladjbb8ju55qkpt.apps.googleusercontent.com"
     var window: UIWindow?
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
@@ -28,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         ZaloSDK.sharedInstance().initialize(withAppId: zaloAppId)
         
-        GIDSignIn.sharedInstance().clientID = "248734013233-nlpr4a4inv6513sngladjbb8ju55qkpt.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().clientID = signGoogleId
         return true
     }
     

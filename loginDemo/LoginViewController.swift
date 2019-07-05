@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
         setupGoogleDelegate()
         setupLineDelegate()
        
+       
     }
     
     @IBAction func loginWithZalo(_ sender: Any) {
